@@ -1,0 +1,15 @@
+:root {
+	// ### primary
+	$soft-cyan: hsl(174, 77%, 80%); // full slider bar
+	$strong-cyan: hsl(174, 86%, 45%); // slider backround
+	$light-grayish-red: hsl(14, 92%, 95%); // discount background
+	$fc-light-red: hsl(15, 100%, 70%); // discount text
+	$fc-pale-blue: hsl(226, 100%, 87%); // cta text
+	//-###-neutral
+	$white_pricing: hsl(0, 0%, 100%); // component background
+	$very-pale-blue: hsl(230, 100%, 99%); // main background
+	$light-grayish-blue: hsl(224, 65%, 95%); // empty slider bar
+	$light-grayish: hsl(223, 50%, 87%); // blue toggle background
+	$fc-dark-desaturated-blue: hsl(227, 35%, 25%); // text & cta background
+	$fc-grayish-blue: hsl(225, 20%, 60%); // text
+}
