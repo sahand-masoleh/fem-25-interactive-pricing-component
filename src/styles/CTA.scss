@@ -1,0 +1,35 @@
+@use "./utils" as *;
+
+.cta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 2rem;
+
+	&__button {
+		background-color: $fc-dark-desaturated-blue;
+		border: none;
+		font-size: $fs-m;
+		color: $fc-pale-blue;
+		border-radius: 50px;
+		height: 2.5rem;
+		width: 10rem;
+		cursor: pointer;
+		margin: 0 auto;
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 1ch;
+	flex-basis: 100%;
+
+	&__item {
+		font-size: $fs-m;
+		color: $fc-grayish-blue;
+		list-style: url(../images/icon-check.svg);
+		padding-left: 1ch;
+		text-align: center;
+	}
+}

@@ -17,3 +17,13 @@
 	place-items: center;
 	grid-template-rows: 1fr auto;
 }
+
+.footer {
+	font-size: $fs-s;
+	margin-bottom: 1ch;
+	color: $fc-grayish-blue;
+
+	&__link {
+		color: $strong-cyan;
+	}
+}

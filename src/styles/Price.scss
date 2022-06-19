@@ -1,0 +1,16 @@
+@use "./utils" as *;
+
+.price {
+	&__num {
+		font-size: $fs-xl;
+		font-weight: $fw-8;
+		color: $fc-dark-desaturated-blue;
+	}
+
+	&__period {
+		font-size: $fs-m;
+		font-weight: $fw-7;
+		margin-left: 1ch;
+		color: $fc-grayish-blue;
+	}
+}

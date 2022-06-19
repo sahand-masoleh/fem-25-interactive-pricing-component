@@ -1,0 +1,21 @@
+@use "./utils" as *;
+
+.billing {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	&__period {
+		font-size: $fs-m;
+		color: $fc-grayish-blue;
+	}
+
+	&__discount {
+		font-size: $fs-s;
+		font-weight: $fw-8;
+		color: $fc-light-red;
+		background-color: $light-grayish-red;
+		padding: 0.5ch 1ch;
+		border-radius: 50px;
+	}
+}
