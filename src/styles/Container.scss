@@ -11,15 +11,23 @@
 	margin-bottom: 5rem;
 	position: relative;
 
+	@media screen and (min-width: 480px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 1ch;
+	}
+
 	&__main {
 		font-size: $fs-l;
 		font-weight: $fw-8;
 		color: $fc-dark-desaturated-blue;
 		margin-bottom: 1ch;
+		flex-basis: 100%;
 	}
 
 	&__sub {
-		font-size: 0.8rem;
+		font-size: $fs-m;
 		color: $fc-grayish-blue;
 		line-height: 3ch;
 		position: relative;
