@@ -1,8 +1,10 @@
+import "../styles/Container.scss";
+
 import Card from "./Card";
 
 function Container() {
 	return (
-		<div className="main">
+		<main className="container">
 			<section className="title">
 				<h1 className="title__main">Simple, traffic-based pricing</h1>
 				<p className="title__sub">
@@ -12,7 +14,7 @@ function Container() {
 				</p>
 			</section>
 			<Card />
-		</div>
+		</main>
 	);
 }
 

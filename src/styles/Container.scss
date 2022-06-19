@@ -1,0 +1,33 @@
+@use "./utils" as *;
+
+.title {
+	text-align: center;
+	margin-bottom: 5rem;
+	position: relative;
+
+	&__main {
+		font-size: $fs-l;
+		font-weight: $fw-8;
+		color: $fc-dark-desaturated-blue;
+		margin-bottom: 1ch;
+	}
+
+	&__sub {
+		font-size: 0.8rem;
+		color: $fc-grayish-blue;
+		line-height: 3ch;
+		position: relative;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		height: 10rem;
+		aspect-ratio: 1;
+		background: center/cover no-repeat url(../images/pattern-circles.svg);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		mix-blend-mode: darken;
+	}
+}

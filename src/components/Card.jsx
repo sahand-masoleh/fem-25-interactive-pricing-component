@@ -1,14 +1,33 @@
+import "../styles/Card.scss";
+import useFormatter from "../hooks/useFormatter";
+
 import Register from "./Register";
 
 function Card() {
+	const [price, percentage, setPrice] = useFormatter(16, 8, 36);
+	function handleChange(event) {
+		setPrice(event.target.value);
+	}
+
 	return (
 		<section className="card">
-			<div className="selection">
-				<h2 className="selection__views"></h2>
-				<input className="selection__bar" type="range" min="0" max="4" />
+			<div className="card__section selection">
+				<h2 className="selection__views">100K PAGEVIEWS</h2>
+				<div
+					className="selection__bar-container"
+					style={{ "--width": percentage }}
+				>
+					<input
+						className="selection__bar"
+						type="range"
+						min="8"
+						max="36"
+						onChange={handleChange}
+					/>
+				</div>
 				<div className="selection__price price">
-					<span className="price__num"></span>
-					<span className="price__period"></span>
+					<span className="price__num">{price}</span>
+					<span className="price__period">/ month</span>
 				</div>
 				<div className="selecton__billing billing">
 					<span className="billing_period">Monthly Billing</span>
