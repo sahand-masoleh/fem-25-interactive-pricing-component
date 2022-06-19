@@ -23,7 +23,7 @@
 		border-radius: 50px;
 		height: 0.5rem;
 		width: inherit;
-		background: $light-grayish-blue;
+		background-color: $light-grayish-blue;
 
 		&::-webkit-slider-thumb {
 			-webkit-appearance: none;
@@ -33,6 +33,9 @@
 			border-radius: 50%;
 			background-color: $strong-cyan;
 			cursor: pointer;
+			&:hover {
+				background-color: $soft-cyan;
+			}
 		}
 
 		&::-moz-range-thumb {
@@ -45,6 +48,12 @@
 			cursor: pointer;
 			position: relative;
 			box-shadow: 0 1rem 1rem 0 $soft-cyan;
+			&:hover {
+				background-color: $soft-cyan;
+			}
+			&:active {
+				background-color: $strong-cyan;
+			}
 		}
 	}
 }

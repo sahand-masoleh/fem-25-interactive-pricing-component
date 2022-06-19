@@ -20,7 +20,9 @@
 		height: 2.5rem;
 		width: 10rem;
 		cursor: pointer;
-		// margin: 0 auto;
+		&:hover {
+			color: white;
+		}
 	}
 }
 
