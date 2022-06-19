@@ -8,7 +8,7 @@ function App() {
 			<footer className="footer">
 				Challenge by{" "}
 				<a
-					href="http://"
+					href="https://www.frontendmentor.io/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="footer__link"
@@ -17,7 +17,7 @@ function App() {
 				</a>
 				. Coded by{" "}
 				<a
-					href="http://"
+					href="https://www.frontendmentor.io/profile/sahand-masoleh/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="footer__link"

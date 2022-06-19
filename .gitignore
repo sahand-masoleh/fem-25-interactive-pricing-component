@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-/demo/*.mp4
+/demo/*.png
