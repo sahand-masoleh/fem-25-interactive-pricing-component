@@ -14,14 +14,15 @@
 	background-color: $very-pale-blue;
 	min-height: 100vh;
 	display: grid;
-	place-items: center;
 	grid-template-rows: 1fr auto;
 }
 
 .footer {
-	font-size: $fs-s;
+	font-size: $fs-xs;
 	margin-bottom: 1ch;
 	color: $fc-grayish-blue;
+	text-align: center;
+	margin: auto;
 
 	&__link {
 		color: $strong-cyan;

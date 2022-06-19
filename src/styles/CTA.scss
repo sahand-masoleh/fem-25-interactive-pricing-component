@@ -2,20 +2,25 @@
 
 .cta {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 2rem;
+	@media screen and (min-width: 480px) {
+		justify-content: space-between;
+		flex-direction: row;
+	}
 
 	&__button {
 		background-color: $fc-dark-desaturated-blue;
 		border: none;
-		font-size: $fs-m;
+		font-size: $fs-s;
 		color: $fc-pale-blue;
 		border-radius: 50px;
 		height: 2.5rem;
 		width: 10rem;
 		cursor: pointer;
-		margin: 0 auto;
+		// margin: 0 auto;
 	}
 }
 
@@ -23,13 +28,16 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1ch;
-	flex-basis: 100%;
+	text-align: center;
+
+	@media screen and (min-width: 480px) {
+		text-align: left;
+	}
 
 	&__item {
-		font-size: $fs-m;
+		font-size: $fs-s;
 		color: $fc-grayish-blue;
 		list-style: url(../images/icon-check.svg);
 		padding-left: 1ch;
-		text-align: center;
 	}
 }

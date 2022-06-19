@@ -12,11 +12,15 @@ $light-grayish: hsl(223, 50%, 87%); // blue toggle background
 $fc-dark-desaturated-blue: hsl(227, 35%, 25%); // text & cta background
 $fc-grayish-blue: hsl(225, 20%, 60%); // text
 
-$fs-xl: 2rem;
-$fs-l: 1.3rem;
-$fs-m: 0.8rem;
-$fs-s: 0.6rem;
+$fs-xl: clamp(2rem, 8vw, 3rem);
+$fs-l: clamp(1.3rem, 5vw, 2rem);
+$fs-m: clamp(0.8rem, 3vw, 1rem);
+$fs-s: clamp(0.7rem, 2vw, 0.8rem);
+$fs-xs: 0.6rem;
 
 $fw-8: 800;
 $fw-7: 700;
 $fw-6: 600;
+
+$gap-1: 1rem;
+$gap-2: 2rem;

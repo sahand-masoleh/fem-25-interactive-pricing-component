@@ -1,13 +1,18 @@
 @use "./_utils.scss" as *;
 
 .card {
+	margin: 0 $gap-1;
 	background-color: white;
 	border-radius: 0.5rem;
 	box-shadow: 0 10px 10px 0 #00000010;
 
 	&__section {
-		padding: 2rem;
+		padding: $gap-2;
 		border-bottom: 1px solid #00000010;
+
+		@media screen and (min-width: 480px) {
+			padding: 3rem;
+		}
 	}
 }
 
@@ -18,13 +23,43 @@
 		"bar"
 		"price"
 		"billing";
-	justify-items: center;
+	place-items: center;
 	gap: 2.5rem;
+
+	@media screen and (min-width: 480px) {
+		grid-template-areas:
+			"views price"
+			"bar bar"
+			"billing billing";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr min-content;
+		gap: 1.5rem;
+	}
 
 	&__views {
 		font-size: $fs-m;
 		font-weight: $fw-8;
 		color: $fc-grayish-blue;
 		letter-spacing: 0.2ch;
+		grid-area: views;
+
+		@media screen and (min-width: 480px) {
+			justify-self: start;
+		}
+	}
+
+	&__price {
+		grid-area: price;
+		@media screen and (min-width: 480px) {
+			justify-self: end;
+		}
+	}
+
+	&__bar {
+		grid-area: bar;
+	}
+
+	&__billing {
+		grid-area: billing;
 	}
 }

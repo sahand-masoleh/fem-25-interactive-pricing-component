@@ -3,19 +3,36 @@
 .billing {
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	justify-content: center;
+	column-gap: $gap-1;
+	position: relative;
+	justify-self: center;
 
 	&__period {
-		font-size: $fs-m;
+		font-size: $fs-s;
 		color: $fc-grayish-blue;
+		text-align: center;
+		width: fit-content;
 	}
 
 	&__discount {
-		font-size: $fs-s;
+		font-size: $fs-xs;
 		font-weight: $fw-8;
 		color: $fc-light-red;
 		background-color: $light-grayish-red;
 		padding: 0.5ch 1ch;
 		border-radius: 50px;
+		position: absolute;
+		left: 100%;
+		margin-left: 1ch;
+		width: max-content;
+
+		&-text {
+			display: none;
+
+			@media screen and (min-width: 480px) {
+				display: unset;
+			}
+		}
 	}
 }
