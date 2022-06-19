@@ -1,13 +1,13 @@
 import "../styles/Bar.scss";
 
-function Bar({ handleChange, percentage }) {
+function Bar({ handleChange, level, max }) {
 	return (
-		<div className="selection__bar bar" style={{ "--width": percentage }}>
+		<div className="selection__bar bar" style={{ "--width": level / max }}>
 			<input
 				className="bar__input"
 				type="range"
-				min="8"
-				max="36"
+				max={max}
+				value={level}
 				onChange={handleChange}
 			/>
 		</div>
